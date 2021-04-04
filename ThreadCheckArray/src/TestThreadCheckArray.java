@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TestThreadCheckArray {
@@ -7,12 +6,11 @@ public class TestThreadCheckArray {
 			Thread thread1, thread2;
 			System.out.println("Enter array size");
 			int num  = input.nextInt();
-			ArrayList<Integer> array = new ArrayList<Integer>();
+			int [] array = new int[num];
 			System.out.println("Enter numbers for array");
 			
 			for (int index = 0; index < num; index++) 
-				//array[index] = input.nextInt();
-				array.set(index, input.nextInt());
+				array[index] = input.nextInt();
 			
 			System.out.println("Enter number");
 			num = input.nextInt();
